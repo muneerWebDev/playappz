@@ -1,0 +1,116 @@
+// ** Donuts ** \\
+
+@mixin donut-blue-221 {
+    width: 221px;
+    height: 221px;
+    background: url(../images/donuts/blue-221.png);
+    transition: .3s;
+    animation: upanddowm 3s infinite;
+}
+
+@mixin donut-blue-246 {
+    width: 246px;
+    height: 246px;
+    background: url(../images/donuts/blue-246.png);
+    transition: .3s;
+
+    @media (max-width: 767px) {
+        width: 127px;
+        height: 127px;
+    }
+}
+
+@mixin donut-blue-205 {
+    width: 205px;
+    height: 205px;
+    background: url(../images/donuts/blue-205.png);
+    transition: .3s;
+    animation: upanddowm 3s infinite;
+
+    @media (max-width: 767px) {
+        width: 127px;
+        height: 127px;
+    }
+}
+
+
+@mixin donut-green-246 {
+    width: 246px;
+    height: 246px;
+    background: url(../images/donuts/green-246.png);
+    transition: .3s;
+    background-size: cover;
+    animation: upanddowm 3s infinite;
+
+    @media (max-width: 767px) {
+        width: 127px;
+        height: 127px;
+    }
+}
+
+@mixin donut-red-317 {
+    width: 317px;
+    height: 317px;
+    background: url(../images/donuts/red-317.png);
+    transition: .3s;
+    background-size: cover;
+    animation: upanddowm 3s infinite;
+
+    @media (max-width: 767px) {
+        width: 138px;
+        height: 138px;
+    }
+}
+
+
+// ** Donuts Ends  ** \\
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content
+    }
+
+    :-moz-placeholder {
+        @content
+    }
+
+    ::-moz-placeholder {
+        @content
+    }
+
+    :-ms-input-placeholder {
+        @content
+    }
+}
+
+
+
+//** Animations **\\
+
+@keyframes scroller {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes upanddowm {
+    0% {
+        margin-top: -10px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -10px;
+    }
+}
